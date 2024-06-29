@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { firestore } from '../../firebaseconfig'; // Import your Firebase configuration
 import { Form, Row, Col, Container, Table } from 'react-bootstrap'; // Import Bootstrap components
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const Holding = () => {
     const [collectionName, setCollectionName] = useState('');
@@ -99,6 +100,7 @@ const Holding = () => {
                     </Col>
                 </Row>
             </Form>
+            <hr className="invisible" />
             {stockData ? (
                 <Table striped bordered hover>
                     <thead>
