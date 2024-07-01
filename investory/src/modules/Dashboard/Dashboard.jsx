@@ -63,7 +63,7 @@ const Dashboard = () => {
             <h2>Stock Data</h2>
             <hr className="invisible" />
             {stockData ? (
-                console.log('inside html', stockData),
+                // console.log('inside html', stockData),
                 <Table striped bordered hover>
                     <thead>
                         <tr>
